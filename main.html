@@ -72,7 +72,9 @@ keyConvert[40] = 2
 keyConvert[65] = 3
 keyConvert[37] = 3
 function setKey(e){
-	moleDirection = keyConvert[e.keyCode]
+	if(keyConvert[e.keyCode]!==undefined){
+		moleDirection = keyConvert[e.keyCode]
+	}
 }
 document.onkeydown = setKey
 function ZAWARLDO(){
